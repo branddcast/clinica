@@ -15,6 +15,7 @@ class CreateTablaColores extends Migration
     public function up()
     {
         Schema::create('Colores', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->increments('Id_Color');
             $table->string('textColor', 20);
             $table->string('bgColor', 20);
