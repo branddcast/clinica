@@ -13,7 +13,7 @@ class CreateTablaDetallesEspecialistas extends Migration
      */
     public function up()
     {
-        Schema::create('detalles_especialistas', function (Blueprint $table) {
+        Schema::create('Detalles_Especialistas', function (Blueprint $table) {
             $table->increments('Id_Detalles_Especialistas');
             $table->unsignedInteger('Id_Especialista');
             $table->unsignedInteger('Id_Especialidad');
@@ -40,6 +40,6 @@ class CreateTablaDetallesEspecialistas extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tabla_detalles_especialistas');
+        Schema::dropIfExists('Detalles_Especialistas');
     }
 }

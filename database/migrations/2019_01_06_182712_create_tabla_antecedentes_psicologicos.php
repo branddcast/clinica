@@ -13,7 +13,7 @@ class CreateTablaAntecedentesPsicologicos extends Migration
      */
     public function up()
     {
-        Schema::create('antecedentes_psicologicos', function (Blueprint $table) {
+        Schema::create('Antecedentes_Psicologicos', function (Blueprint $table) {
             $table->increments('Id_Antecedentes_Psicologicos');
             $table->string('Nerviosismo', 100);
             $table->string('Depresion', 100);
@@ -38,6 +38,6 @@ class CreateTablaAntecedentesPsicologicos extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('antecedentes_psicologicos');
+        Schema::dropIfExists('Antecedentes_Psicologicos');
     }
 }

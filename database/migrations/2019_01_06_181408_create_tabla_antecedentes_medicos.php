@@ -13,7 +13,7 @@ class CreateTablaAntecedentesMedicos extends Migration
      */
     public function up()
     {
-        Schema::create('antecedentes_medicos', function (Blueprint $table) {
+        Schema::create('Antecedentes_Medicos', function (Blueprint $table) {
             $table->increments('Id_Antecedentes_Medicos');
             $table->string('Cirugias', 150);
             $table->string('Diabetes', 100);
@@ -49,6 +49,6 @@ class CreateTablaAntecedentesMedicos extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('antecedentes_medicos');
+        Schema::dropIfExists('Antecedentes_Medicos');
     }
 }

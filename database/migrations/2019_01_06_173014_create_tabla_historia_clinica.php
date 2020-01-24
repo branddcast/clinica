@@ -13,7 +13,7 @@ class CreateTablaHistoriaClinica extends Migration
      */
     public function up()
     {
-        Schema::create('historia_clinica', function (Blueprint $table) {
+        Schema::create('Historia_Clinica', function (Blueprint $table) {
             $table->increments('Id_Historia_Clinica');
             $table->string('Sexo', 2);
             $table->string('Ocupacion', 200)->nullable();
@@ -38,6 +38,6 @@ class CreateTablaHistoriaClinica extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('historia_clinica');
+        Schema::dropIfExists('Historia_Clinica');
     }
 }

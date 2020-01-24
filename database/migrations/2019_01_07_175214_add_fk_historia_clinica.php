@@ -13,7 +13,7 @@ class AddFkHistoriaClinica extends Migration
      */
     public function up()
     {
-        Schema::table('historia_clinica', function (Blueprint $table)
+        Schema::table('Historia_Clinica', function (Blueprint $table)
         {
             $table->unsignedInteger('Id_Paciente');
             $table->unsignedInteger('Id_Antecedentes_Familiares')->nullable();

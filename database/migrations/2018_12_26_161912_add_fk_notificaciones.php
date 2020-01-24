@@ -13,7 +13,7 @@ class AddFkNotificaciones extends Migration
      */
     public function up()
     {
-        Schema::table('notificaciones', function (Blueprint $table)
+        Schema::table('Notificaciones', function (Blueprint $table)
         {
             $table->unsignedInteger('Id_Usuario')->nullable();
 

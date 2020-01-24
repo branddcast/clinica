@@ -14,7 +14,7 @@ class CreateTablaCitas extends Migration
     public function up()
     {
         Schema::create('Citas', function (Blueprint $table) {
-            
+            $table->engine = 'InnoDB';
             $table->increments('Id_Cita');
             $table->string('Titulo', 100);
             $table->string('Comentarios', 255)->nullable();

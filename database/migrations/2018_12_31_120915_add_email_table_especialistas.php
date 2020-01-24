@@ -13,7 +13,7 @@ class AddEmailTableEspecialistas extends Migration
      */
     public function up()
     {
-        Schema::table('especialistas', function (Blueprint $table)
+        Schema::table('Especialistas', function (Blueprint $table)
         {
             $table->string('Email')->unique();
         });

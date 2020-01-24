@@ -13,7 +13,7 @@ class AddFkCitas extends Migration
      */
     public function up()
     {
-        Schema::table('citas', function (Blueprint $table)
+        Schema::table('Citas', function (Blueprint $table)
         {
             $table->unsignedInteger('Id_Usuario')->nullable();
             $table->unsignedInteger('Id_Especialista')->nullable();

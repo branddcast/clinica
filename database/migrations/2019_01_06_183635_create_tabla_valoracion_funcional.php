@@ -13,7 +13,7 @@ class CreateTablaValoracionFuncional extends Migration
      */
     public function up()
     {
-        Schema::create('valoracion_funcional', function (Blueprint $table) {
+        Schema::create('Valoracion_Funcional', function (Blueprint $table) {
             $table->increments('Id_Valoracion_Funcional');
             $table->string('Capacidad_Diferente', 100);
             $table->string('Apoyo_Especial', 50)->nullable();
@@ -30,6 +30,6 @@ class CreateTablaValoracionFuncional extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('valoracion_funcional');
+        Schema::dropIfExists('Valoracion_Funcional');
     }
 }

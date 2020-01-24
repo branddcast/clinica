@@ -13,7 +13,7 @@ class CreateTablaAntecedentesNutricionales extends Migration
      */
     public function up()
     {
-        Schema::create('antecedentes_nutricionales', function (Blueprint $table) {
+        Schema::create('Antecedentes_Nutricionales', function (Blueprint $table) {
             $table->increments('Id_Antecedentes_Nutricionales');
             $table->decimal('Peso', 5, 2);
             $table->decimal('Estatura', 3, 2);
@@ -39,6 +39,6 @@ class CreateTablaAntecedentesNutricionales extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('antecedentes_nutricionales');
+        Schema::dropIfExists('Antecedentes_Nutricionales');
     }
 }

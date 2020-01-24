@@ -13,7 +13,7 @@ class CreateTablaAntecedentesGinecoObstetricos extends Migration
      */
     public function up()
     {
-        Schema::create('antecedentes_gineco-obstetricos', function (Blueprint $table){
+        Schema::create('Antecedentes_Gineco-obstetricos', function (Blueprint $table){
             $table->increments('Id_Antecedentes_Gineco_Obstetricos');
             $table->string('Menarca', 100)->nullable();
             $table->string('Ritmo', 100)->nullable();
@@ -46,6 +46,6 @@ class CreateTablaAntecedentesGinecoObstetricos extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('antecedentes_gineco-obstetricos');
+        Schema::dropIfExists('Antecedentes_Gineco-obstetricos');
     }
 }
